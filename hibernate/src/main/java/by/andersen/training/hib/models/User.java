@@ -26,6 +26,15 @@ public class User {
         this.age = age;
     }
 
+    public void addAuto(Auto auto) {
+        auto.setUser(this);
+        autos.add(auto);
+    }
+
+    public void removeAuto(Auto auto) {
+        autos.remove(auto);
+    }
+
     public Long getId() {
         return id;
     }
