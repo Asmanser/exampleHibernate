@@ -9,13 +9,13 @@ public class City {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
-    @Column(name = "city_name",length = 200)
+    @Column(name = "city_name",length = 200, nullable = false)
     private String cityName;
 
     @OneToMany(mappedBy = "city", fetch = FetchType.LAZY)
-    private List<User> users;
+    private List<PersonalInformation> personalInformation;
 
     public City() {
     }
@@ -24,11 +24,11 @@ public class City {
         this.cityName = cityName;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -40,11 +40,11 @@ public class City {
         this.cityName = cityName;
     }
 
-    public List<User> getUsers() {
-        return users;
+    public List<PersonalInformation> getPersonalInformation() {
+        return personalInformation;
     }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setPersonalInformation(List<PersonalInformation> personalInformation) {
+        this.personalInformation = personalInformation;
     }
 }

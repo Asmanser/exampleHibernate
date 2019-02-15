@@ -3,32 +3,33 @@ package by.andersen.training.hibernatecrud.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "personal_information")
+@Table(name = "personal_informations")
 public class PersonalInformation {
 
     @Id
     @Column(name = "id_user")
-    private long id;
+    private int id;
 
-    @Column(length = 80)
+    @Column(length = 80,nullable = false)
     private String name;
 
-    @Column(length = 80)
+    @Column(length = 80,nullable = false)
     private String surname;
 
-    @Column(length = 80)
+    @Column(length = 80,nullable = false)
     private String patronymic;
 
-    private byte age;
+    @Column(nullable = false)
+    private int age;
 
-    @Column(length = 100)
+    @Column(length = 100,nullable = false)
     private String email;
 
     @OneToOne
     @PrimaryKeyJoinColumn
     private User user;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "city_id")
     private City city;
 
@@ -43,7 +44,7 @@ public class PersonalInformation {
         this.email = email;
     }
 
-    public PersonalInformation(long id, String name, String surname, String patronymic, byte age, String email) {
+    public PersonalInformation(int id, String name, String surname, String patronymic, byte age, String email) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -52,11 +53,11 @@ public class PersonalInformation {
         this.email = email;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -84,11 +85,11 @@ public class PersonalInformation {
         this.patronymic = patronymic;
     }
 
-    public byte getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(byte age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

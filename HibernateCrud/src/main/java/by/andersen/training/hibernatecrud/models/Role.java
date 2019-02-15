@@ -9,9 +9,9 @@ public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
-    @Column(name = "role_name",length = 20)
+    @Column(name = "role_name",length = 20,nullable = false)
     private String roleName;
 
     @ManyToMany
@@ -27,11 +27,11 @@ public class Role {
         this.roleName = roleName;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
