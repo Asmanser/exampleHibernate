@@ -1,4 +1,4 @@
-package by.andersen.training.models;
+package by.andersen.training.hibernatecrud.models;
 
 import javax.persistence.*;
 
