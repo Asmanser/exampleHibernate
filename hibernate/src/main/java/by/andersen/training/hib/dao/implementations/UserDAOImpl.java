@@ -11,7 +11,7 @@ import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
 
-    public User findById(int id) {
+    public User findById(Long id) {
         return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(User.class,id);
     }
 

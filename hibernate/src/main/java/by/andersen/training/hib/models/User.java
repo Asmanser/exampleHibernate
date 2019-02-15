@@ -1,6 +1,7 @@
 package by.andersen.training.hib.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,12 +19,12 @@ public class User {
 
     private int age;
 
-    public User() {
-    }
+    public User() {    }
 
     public User(String name, int age) {
         this.name = name;
         this.age = age;
+        autos = new ArrayList<Auto>();
     }
 
     public void addAuto(Auto auto) {

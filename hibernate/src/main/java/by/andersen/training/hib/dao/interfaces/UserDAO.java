@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface UserDAO {
 
-    public User findById(int id);
+    public User findById(Long id);
 
     public void save(User user);
 

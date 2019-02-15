@@ -1,0 +1,6 @@
+
+asquid:UselessImportCheck
+"6Remove this unused import 'org.hibernate.Transaction'.(ìÌè³8¡áç-
+¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çù¸àúÿÿÿÿ8¸¹ßç-
+‡squid:UselessImportCheck"WRemove this unused import 'by.andersen.training.hib.utils.HibernateSessionFactoryUtil'.(ñù±«ÿÿÿÿÿ8¯ãç-
+bsquid:UselessImportCheck	"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8¡áç-
