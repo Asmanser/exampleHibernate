@@ -24,6 +24,14 @@ public class PersonalInformation {
     @Column(length = 100)
     private String email;
 
+    @OneToOne
+    @PrimaryKeyJoinColumn
+    private User user;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "city_id")
+    private City city;
+
     public PersonalInformation() {
     }
 
@@ -90,5 +98,21 @@ public class PersonalInformation {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }

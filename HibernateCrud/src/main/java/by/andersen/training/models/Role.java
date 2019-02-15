@@ -1,6 +1,7 @@
 package by.andersen.training.models;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "roles")
@@ -12,6 +13,12 @@ public class Role {
 
     @Column(name = "role_name",length = 20)
     private String roleName;
+
+    @ManyToMany
+    @JoinTable(name = "users_roles",
+            joinColumns = @JoinColumn (name = "role_id"),
+            inverseJoinColumns = @JoinColumn (name = "user_id"))
+    private List<User> users;
 
     public Role() {
     }
@@ -34,5 +41,13 @@ public class Role {
 
     public void setRoleName(String roleName) {
         this.roleName = roleName;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 }
