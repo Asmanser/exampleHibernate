@@ -12,14 +12,8 @@ hibernate/.idea/**/shelf
 hibernate/.idea/**/contentModel.xml
 
 # Sensitive or high-churn files
-hibernate/.idea/**/dataSources/
-hibernate/.idea/**/dataSources.ids
-hibernate/.idea/**/dataSources.local.xml
-hibernate/.idea/**/sqlDataSources.xml
-hibernate/.idea/**/dynamic.xml
-hibernate/.idea/**/uiDesigner.xml
-hibernate/.idea/**/dbnavigator.xml
-hibernate/.idea/**/workspace.xml
+hibernate/.idea
+
 
 # Gradle
 hibernate/.idea/**/gradle.xml
@@ -65,3 +59,71 @@ hibernate/.idea/httpRequests
 
 # Android studio 3.1+ serialized cache file
 hibernate/.idea/caches/build_file_checksums.ser
+
+
+
+
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+HibernateCrud/.idea
+
+# Generated files
+HibernateCrud/.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+HibernateCrud/.idea/**/dataSources/
+HibernateCrud/.idea/**/dataSources.ids
+HibernateCrud/.idea/**/dataSources.local.xml
+HibernateCrud/.idea/**/sqlDataSources.xml
+HibernateCrud/.idea/**/dynamic.xml
+HibernateCrud/.idea/**/uiDesigner.xml
+HibernateCrud/.idea/**/dbnavigator.xml
+HibernateCrud/.idea/**/workspace.xml
+
+# Gradle
+HibernateCrud/.idea/**/gradle.xml
+HibernateCrud/.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+HibernateCrud/.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+HibernateCrud/out/
+
+# mpeltonen/sbt-idea plugin
+HibernateCrud/.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+hibernate/.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+HibernateCrud/.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+HibernateCrud/.idea/caches/build_file_checksums.ser
