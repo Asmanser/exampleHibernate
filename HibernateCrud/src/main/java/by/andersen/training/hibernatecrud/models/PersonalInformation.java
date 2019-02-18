@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class PersonalInformation {
 
     @Id
-    @Column(name = "id_user")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(length = 80,nullable = false)
@@ -25,8 +25,8 @@ public class PersonalInformation {
     @Column(length = 100,nullable = false)
     private String email;
 
-    @OneToOne
-    @PrimaryKeyJoinColumn
+    @OneToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name="id_user")
     private User user;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
