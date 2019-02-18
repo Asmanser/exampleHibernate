@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b53aaf45-513c-450b-b39c-e5c5b572bc79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HibernateCrud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateCrud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/PersonalInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/PersonalInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/City.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/PersonalInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/PersonalInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/andersen/training/hibernatecrud/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hibernate/.idea/sonarlint/issuestore/6/f/6fa6a8aefe81492ec88fef08e511c8d934b4dbd2" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate/.idea/sonarlint/issuestore/6/f/6fa6a8aefe81492ec88fef08e511c8d934b4dbd2" afterDir="false" />
-    </list>
+    <list default="true" id="b53aaf45-513c-450b-b39c-e5c5b572bc79" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,15 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/dao/interfaces/UserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/dao/implementations/CityDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -164,8 +139,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -335,18 +310,6 @@
               <item name="andersen" type="462c0819:PsiDirectoryNode" />
               <item name="training" type="462c0819:PsiDirectoryNode" />
               <item name="hibernatecrud" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HibernateCrud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HibernateCrud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="by" type="462c0819:PsiDirectoryNode" />
-              <item name="andersen" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernatecrud" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,7 +335,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550500828272" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550501166117" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hibernate" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -420,12 +383,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550227944036</updated>
       <workItem from="1550227948879" duration="10840000" />
-      <workItem from="1550497386551" duration="1322000" />
+      <workItem from="1550497386551" duration="1656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12162000" />
+    <option name="totallyTimeSpent" value="12496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,6 +401,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="670" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39180326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -624,6 +588,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/andersen/training/hibernatecrud/services/interfaces/CRUDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
