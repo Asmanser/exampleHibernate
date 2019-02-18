@@ -14,7 +14,7 @@ public class City {
     @Column(name = "city_name",length = 200, nullable = false)
     private String cityName;
 
-    @OneToMany(mappedBy = "city", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "city", fetch = FetchType.EAGER)
     private List<PersonalInformation> personalInformation;
 
     public City() {
@@ -46,5 +46,14 @@ public class City {
 
     public void setPersonalInformation(List<PersonalInformation> personalInformation) {
         this.personalInformation = personalInformation;
+    }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", cityName='" + cityName + '\'' +
+                ", personalInformation=" + personalInformation +
+                '}';
     }
 }

@@ -116,4 +116,18 @@ public class PersonalInformation {
     public void setCity(City city) {
         this.city = city;
     }
+
+    @Override
+    public String toString() {
+        return "PersonalInformation{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                ", user=" + user +
+                ", city=" + city +
+                '}';
+    }
 }
