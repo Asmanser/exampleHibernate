@@ -83,7 +83,9 @@ public class UserDAOImpl implements UserDAO<User,Integer> {
         Transaction transaction = session.beginTransaction();
         User user = new User();
         try {
-            user = session.get(User.class, integer);
+            Query query = session.createQuery("from by.andersen.training.hibernatecrud.models.User as u fetch all properties where u.id = :id");
+            query.setParameter("id",integer);
+            user =(User) query.getSingleResult();
         }catch (Exception e) {
             e.printStackTrace();
             transaction.rollback();

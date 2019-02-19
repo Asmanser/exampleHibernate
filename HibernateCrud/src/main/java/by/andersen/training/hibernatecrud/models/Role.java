@@ -14,7 +14,7 @@ public class Role {
     @Column(name = "role_name",length = 20,nullable = false)
     private String roleName;
 
-    @ManyToMany(cascade=CascadeType.ALL)
+    @ManyToMany(cascade=CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn (name = "role_id"),
             inverseJoinColumns = @JoinColumn (name = "user_id"))

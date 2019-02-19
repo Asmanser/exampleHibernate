@@ -17,10 +17,10 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @OneToOne(mappedBy = "user",cascade=CascadeType.ALL,optional = false)
+    @OneToOne(mappedBy = "user",cascade=CascadeType.ALL,optional = false,fetch = FetchType.LAZY)
     private PersonalInformation personalInformation;
 
-    @ManyToMany(cascade=CascadeType.ALL)
+    @ManyToMany(cascade=CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn (name = "user_id"),
             inverseJoinColumns = @JoinColumn (name = "role_id"))

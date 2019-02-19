@@ -16,7 +16,10 @@ import by.andersen.training.hibernatecrud.services.interfaces.RoleService;
 import by.andersen.training.hibernatecrud.services.interfaces.UserService;
 import by.andersen.training.hibernatecrud.utils.HibernateSessionFactoryUtil;
 import com.sun.javafx.image.IntPixelGetter;
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +32,7 @@ public class Main {
         UserService<User,Integer> userService = new UserServiceImpl();
         PersonalInformationService<PersonalInformation, Integer> personalInformationService = new PersonalInformationServiceImpl();
         RoleService<Role,Integer> roleService = new RoleServiceImpl();
-        cityService.add(new City("Minsk"));
+        /*cityService.add(new City("Minsk"));
         cityService.add(new City("Bobruisk"));
         User user = new User();
         user.setLogin("user");
@@ -42,7 +45,16 @@ public class Main {
         personalInformation.setCity(new City("Gomel"));
         personalInformation.setUser(user);
         user.setPersonalInformation(personalInformation);
-        personalInformationService.add(personalInformation);
+        personalInformationService.add(personalInformation);*/
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        User user = userService.findById(4);
+        //Hibernate.initialize(user);
+        System.out.println(user.getPersonalInformation().getName());
+        System.out.println(user.getPersonalInformation().getCity().getCityName());
+        System.out.println(user.getRoles().get(0).getRoleName());
+        transaction.commit();
+        session.close();
         sessionFactory.close();
     }
 

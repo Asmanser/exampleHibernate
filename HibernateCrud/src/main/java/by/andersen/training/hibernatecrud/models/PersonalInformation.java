@@ -25,7 +25,7 @@ public class PersonalInformation {
     @Column(length = 100,nullable = false)
     private String email;
 
-    @OneToOne(cascade=CascadeType.ALL)
+    @OneToOne(cascade=CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name="id_user")
     private User user;
 
@@ -126,7 +126,6 @@ public class PersonalInformation {
                 ", patronymic='" + patronymic + '\'' +
                 ", age=" + age +
                 ", email='" + email + '\'' +
-                ", user=" + user +
                 ", city=" + city +
                 '}';
     }
