@@ -1,9 +1,9 @@
-package by.andersen.training.hibernatecrud.services.implementations;
+package by.andersen.training.hibernatecrud.services.dao.implementations;
 
 import by.andersen.training.hibernatecrud.dao.implementations.RoleDAOImpl;
 import by.andersen.training.hibernatecrud.dao.interfaces.RoleDAO;
 import by.andersen.training.hibernatecrud.models.Role;
-import by.andersen.training.hibernatecrud.services.interfaces.RoleService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.RoleService;
 
 import java.util.List;
 

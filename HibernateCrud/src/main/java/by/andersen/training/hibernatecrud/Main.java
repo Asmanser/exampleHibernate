@@ -1,28 +1,21 @@
 package by.andersen.training.hibernatecrud;
 
-import by.andersen.training.hibernatecrud.dao.implementations.CityDAOImpl;
-import by.andersen.training.hibernatecrud.dao.interfaces.CityDAO;
 import by.andersen.training.hibernatecrud.models.City;
 import by.andersen.training.hibernatecrud.models.PersonalInformation;
 import by.andersen.training.hibernatecrud.models.Role;
 import by.andersen.training.hibernatecrud.models.User;
-import by.andersen.training.hibernatecrud.services.implementations.CityServiceImpl;
-import by.andersen.training.hibernatecrud.services.implementations.PersonalInformationServiceImpl;
-import by.andersen.training.hibernatecrud.services.implementations.RoleServiceImpl;
-import by.andersen.training.hibernatecrud.services.implementations.UserServiceImpl;
-import by.andersen.training.hibernatecrud.services.interfaces.CityService;
-import by.andersen.training.hibernatecrud.services.interfaces.PersonalInformationService;
-import by.andersen.training.hibernatecrud.services.interfaces.RoleService;
-import by.andersen.training.hibernatecrud.services.interfaces.UserService;
+import by.andersen.training.hibernatecrud.services.dao.implementations.CityServiceImpl;
+import by.andersen.training.hibernatecrud.services.dao.implementations.PersonalInformationServiceImpl;
+import by.andersen.training.hibernatecrud.services.dao.implementations.RoleServiceImpl;
+import by.andersen.training.hibernatecrud.services.dao.implementations.UserServiceImpl;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.CityService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.PersonalInformationService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.RoleService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.UserService;
 import by.andersen.training.hibernatecrud.utils.HibernateSessionFactoryUtil;
-import com.sun.javafx.image.IntPixelGetter;
-import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 

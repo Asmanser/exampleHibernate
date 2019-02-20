@@ -1,4 +1,4 @@
-package by.andersen.training.hibernatecrud.services.interfaces;
+package by.andersen.training.hibernatecrud.services.dao.interfaces;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package by.andersen.training.hibernatecrud.services.implementations;
+package by.andersen.training.hibernatecrud.services.dao.implementations;
 
 import by.andersen.training.hibernatecrud.dao.implementations.UserDAOImpl;
 import by.andersen.training.hibernatecrud.dao.interfaces.UserDAO;
 import by.andersen.training.hibernatecrud.models.User;
-import by.andersen.training.hibernatecrud.services.interfaces.UserService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.UserService;
 
 import java.util.List;
 

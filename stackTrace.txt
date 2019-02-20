@@ -1,0 +1,7 @@
+Exception in thread "main" org.hibernate.LazyInitializationException: could not initialize proxy [by.andersen.training.hibernatecrud.models.City#12] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:169)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:309)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at by.andersen.training.hibernatecrud.models.City$HibernateProxy$fxw62mYo.getCityName(Unknown Source)
+	at by.andersen.training.hibernatecrud.Main.main(Main.java:47)

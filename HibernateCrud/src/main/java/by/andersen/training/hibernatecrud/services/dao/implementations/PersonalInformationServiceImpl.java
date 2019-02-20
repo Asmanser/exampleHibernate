@@ -1,9 +1,9 @@
-package by.andersen.training.hibernatecrud.services.implementations;
+package by.andersen.training.hibernatecrud.services.dao.implementations;
 
 import by.andersen.training.hibernatecrud.dao.implementations.PersonalInformationDAOImpl;
 import by.andersen.training.hibernatecrud.dao.interfaces.PersonalInformationDAO;
 import by.andersen.training.hibernatecrud.models.PersonalInformation;
-import by.andersen.training.hibernatecrud.services.interfaces.PersonalInformationService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.PersonalInformationService;
 
 import java.util.List;
 

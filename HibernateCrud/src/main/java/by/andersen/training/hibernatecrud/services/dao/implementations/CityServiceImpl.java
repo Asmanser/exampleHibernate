@@ -1,9 +1,9 @@
-package by.andersen.training.hibernatecrud.services.implementations;
+package by.andersen.training.hibernatecrud.services.dao.implementations;
 
 import by.andersen.training.hibernatecrud.dao.implementations.CityDAOImpl;
 import by.andersen.training.hibernatecrud.dao.interfaces.CityDAO;
 import by.andersen.training.hibernatecrud.models.City;
-import by.andersen.training.hibernatecrud.services.interfaces.CityService;
+import by.andersen.training.hibernatecrud.services.dao.interfaces.CityService;
 
 import java.util.List;
 
